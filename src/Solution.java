@@ -9,6 +9,7 @@ public class Solution {
         scanner.close();
         
         //double amount =200.0;
+        //Give Indian rupees it will print in country specific currency format
         String us = (NumberFormat.getCurrencyInstance(new Locale("en", "US")).format(payment));
         String china =  NumberFormat.getCurrencyInstance(Locale.CHINA).format(payment);
         String france = NumberFormat.getCurrencyInstance(Locale.FRANCE).format(payment);
